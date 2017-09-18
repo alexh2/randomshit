@@ -7,6 +7,7 @@
     vertical-align: 0;
     background: transparent;
     overflow: hidden;
+    -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -128,6 +129,7 @@ div.google-maps {
 @media only screen and (max-width: 500px) and (-webkit-min-device-pixel-ratio: 2) {
     * {
         overflow: auto;
+	-webkit-overflow-scrolling: touch;
     }
 
     div#outside {
