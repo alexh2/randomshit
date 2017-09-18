@@ -126,6 +126,9 @@ div.google-maps {
 }
 
 @media only screen and (max-width: 500px) and (-webkit-min-device-pixel-ratio: 2) {
+    * {
+        overflow: auto;
+    }
 
     div#outside {
         width: 100%;
