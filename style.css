@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    vertical-align: 0;
+    background: transparent;
+    overflow: hidden;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Bebas Neue', 'Roboto Condensed', sans-serif;
+    color: #fff;
+    text-shadow: 1px 1px 4px #fff;
+    background: url(img/wallpaper.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+hr {
+    width: 60%;
+    margin: 0 auto;
+    border-color: #fff;
+}
+
+#outside {
+    width: 50%;
+    height: 100vh;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    box-shadow: 0 15px 10px;
+}
+
+#inside {
+    text-align: center;
+}
+
+.header {
+	padding-top: 10px;
+}
+
+.header h1 {
+    font-size: 5em;
+    margin-bottom: -15px;
+    padding-bottom: 10px;
+}
+
+.header h2 {
+    font-size: 4em;
+    margin-top: 0;
+    padding-top: 10px;
+}
+
+.header h4 {
+    font-size: 8em;
+    margin-top: -30px;
+    margin-bottom: -20px;
+    padding-top: 20px;
+}
+
+.tagline p {
+    font-size: 3em;
+    padding-top: 5px;
+}
+
+#wrapper {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    height: 154px;
+    padding: 10px 0;
+}
+
+div#left,
+div#right {
+    padding: 20px;
+}
+
+div#right {
+    border-left: 2px solid #fff;
+}
+
+div#left,
+div#right p {
+    font-size: 3em;
+}
+
+.address {
+    font-size: 2.5em;
+    padding-top: 5px;
+}
+
+div.google-maps {
+    width: 65%;
+    /*height: 10px;*/
+    margin: 0 auto;
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 60%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+
+.google-maps iframe {
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 60% !important;
+}
+
+@media only screen and (max-width: 500px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    div#outside {
+        width: 100%;
+    }
+
+    hr {
+        width: 90%;
+        margin: 0 auto;
+        border-color: #fff;
+    }
+
+    /* HEADERS */
+    .header h1 {
+        font-size: 3em;
+        padding-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    .header h2 {
+        font-size: 2em;
+        margin-top: 10px;
+    }
+
+    .header h4 {
+        font-size: 3em;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    /* CONTENT */
+    .tagline {
+        font-size: 1em;
+        margin-top: 10px;
+    }
+
+    #wrapper {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    div#left,
+    div#right {
+        padding: 20px;
+    }
+
+    div#right {
+        border-left: 2px solid white;
+    }
+
+    div#left,
+    div#right p {
+        font-size: 2em;
+    }
+
+    .address h3 {
+        padding: 5px 0;
+        font-size: 0.8em;
+    }
+
+    div.google-maps {
+        width: 100% !important;
+        height: 300px !important;
+        /*padding-bottom: 50%;*/
+        margin: 0 auto;
+    }
+}
