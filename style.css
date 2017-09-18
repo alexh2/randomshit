@@ -192,7 +192,7 @@ div.google-maps {
     div.google-maps {
         width: 100% !important;
         height: 300px !important;
-        /*padding-bottom: 50%;*/
+        padding-bottom: 50%;
         margin: 0 auto;
     }
 }
