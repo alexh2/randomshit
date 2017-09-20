@@ -15,7 +15,6 @@ body {
     width: 100%;
     font-family: 'Bebas Neue', 'Roboto Condensed', sans-serif;
     color: #2c3e50;
-    text-shadow: 1px 1px 4px #2c3e50;
     background: url(img/wallpaper.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -54,6 +53,7 @@ hr {
 .header h1 {
     font-size: 5em;
     margin-bottom: -15px;
+    padding-top: 0px;
     padding-bottom: 10px;
 }
 
@@ -64,6 +64,8 @@ hr {
 }
 
 .header h4 {
+    color: #2ecc71;
+    text-shadow: 3px 3px 10px #2ecc71;
     font-size: 8em;
     margin-top: -30px;
     margin-bottom: -20px;
@@ -72,7 +74,7 @@ hr {
 
 .tagline p {
     font-size: 3em;
-    padding-top: 5px;
+    padding-top: 0px;
 }
 
 #wrapper {
@@ -80,22 +82,41 @@ hr {
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    height: 154px;
+    height: 170px;
     padding: 10px 0;
+}
+
+button {
+    font-family: 'Bebas Neue', 'Roboto Condensed', sans-serif;
+    line-height: inherit;
+    color: #2c3e50;
+    font-size: 1.1em;
+    width: 200px;
+    border: none;
+}
+
+button:hover span {
+    display: none;
+}
+
+button:hover:before {
+    display: block;
+    white-space: pre;
+    content: "and \A weed!";
 }
 
 div#left,
 div#right {
-    padding: 20px;
-}
-
-div#right {
-    border-left: 2px solid #2c3e50;
+    padding: 10px 10px;
 }
 
 div#left,
 div#right p {
-    font-size: 3em;
+    font-size: 4em;
+}
+
+div#right {
+    border-left: 2px solid #2c3e50;
 }
 
 .address {
@@ -124,6 +145,7 @@ div.google-maps {
     left: 0;
     width: 100% !important;
     height: 60% !important;
+    line-height: 0;
 }
 
 @media only screen and (max-width: 500px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -148,25 +170,30 @@ div.google-maps {
     /* HEADERS */
     .header h1 {
         font-size: 3em;
-        padding-top: 10px;
+        padding: 0;
         margin-bottom: 0px;
     }
 
     .header h2 {
-        font-size: 2em;
-        margin-top: 10px;
+        font-size: 3em;
+        padding-top: 0px;
+        margin-top: 0px;
     }
 
     .header h4 {
-        font-size: 3em;
-        margin-top: 0px;
-        margin-bottom: 0px;
+        font-size: 5em;
+        padding-top: 0px;
+        margin: -15px 0;
     }
 
     /* CONTENT */
     .tagline {
         font-size: 1em;
         margin-top: 10px;
+    }
+
+    .tagline p {
+        padding-top: 0;
     }
 
     #wrapper {
@@ -183,18 +210,48 @@ div.google-maps {
         padding: 20px;
     }
 
+    button {
+        font-family: 'Bebas Neue', 'Roboto Condensed', sans-serif;
+        line-height: inherit;
+        color: #2c3e50;
+        font-size: 1.1em;
+        width: 110px;
+        border: none;
+    }
+
+    button:hover {
+        color: #2ecc71;
+    }
+
+    button:hover span {
+        color: #2ecc71;
+        display: none;
+    }
+
+    button:hover:before {
+        display: block;
+        white-space: pre;
+        color: #2ecc71 !important;
+        content: "and \A weed!";
+
+    }
+
     div#right {
         border-left: 2px solid #2c3e50;
     }
 
     div#left,
     div#right p {
-        font-size: 2em;
+        font-size: 2.3em;
     }
 
     .address h3 {
         padding: 5px 0;
         font-size: 0.8em;
+    }
+
+    .google-maps {
+        padding-bottom: 0;
     }
 
     div.google-maps {
