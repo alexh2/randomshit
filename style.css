@@ -95,13 +95,19 @@ button {
     border: none;
 }
 
+button:hover {
+    color: #2ecc71;
+}
+
 button:hover span {
+    color: #2ecc71;
     display: none;
 }
 
 button:hover:before {
     display: block;
     white-space: pre;
+    color: #2ecc71 !important;
     content: "and \A weed!";
 }
 
@@ -233,7 +239,6 @@ div.google-maps {
         white-space: pre;
         color: #2ecc71 !important;
         content: "and \A weed!";
-
     }
 
     div#right {
